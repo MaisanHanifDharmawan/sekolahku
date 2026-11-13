@@ -1,0 +1,321 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+
+  html.dark {
+    color-scheme: dark;
+  }
+
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-ink-50 font-sans text-ink-700 antialiased transition-colors duration-300;
+    font-feature-settings: "ss01", "cv11";
+  }
+
+  html.dark body {
+    @apply bg-ink-950 text-ink-300;
+  }
+
+  h1, h2, h3, h4, h5 {
+    @apply font-display text-ink-900;
+    letter-spacing: -0.025em;
+    font-feature-settings: "ss01";
+  }
+
+  html.dark h1,
+  html.dark h2,
+  html.dark h3,
+  html.dark h4,
+  html.dark h5 {
+    @apply text-white;
+  }
+
+  #app {
+    @apply flex min-h-screen flex-col;
+  }
+
+  ::selection {
+    @apply bg-primary-200 text-primary-900;
+  }
+  html.dark ::selection {
+    @apply bg-primary-500/30 text-primary-100;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply rounded-full bg-ink-300;
+  }
+  html.dark ::-webkit-scrollbar-thumb {
+    @apply bg-ink-700;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-ink-400;
+  }
+  html.dark ::-webkit-scrollbar-thumb:hover {
+    @apply bg-ink-600;
+  }
+
+  /* Focus ring (accessible) */
+  :focus-visible {
+    @apply outline-none ring-2 ring-primary-500/40 ring-offset-2 ring-offset-white;
+  }
+  html.dark :focus-visible {
+    @apply ring-offset-ink-950;
+  }
+}
+
+@layer components {
+  .card {
+    @apply rounded-2xl border border-ink-200/70 bg-white shadow-card transition-all duration-300;
+  }
+  html.dark .card {
+    @apply border-ink-800 bg-ink-900;
+  }
+
+  .card-hover {
+    @apply hover:-translate-y-1 hover:shadow-elevated;
+  }
+
+  .input-field {
+    @apply w-full rounded-xl border border-ink-300 bg-white px-4 py-2.5 text-sm text-ink-800 placeholder-ink-400 transition focus:border-primary-500 focus:outline-none focus:ring-4 focus:ring-primary-500/15;
+  }
+  html.dark .input-field {
+    @apply border-ink-700 bg-ink-800 text-ink-100 placeholder-ink-500;
+  }
+
+  .field-label {
+    @apply mb-1.5 block text-sm font-medium text-ink-700;
+  }
+  html.dark .field-label {
+    @apply text-ink-300;
+  }
+
+  .badge {
+    @apply inline-flex items-center gap-1 rounded-full px-2.5 py-0.5 text-xs font-semibold;
+  }
+
+  .eyebrow {
+    @apply inline-flex items-center gap-2 rounded-full border border-primary-200 bg-primary-50 px-3 py-1 text-xs font-semibold uppercase tracking-[0.14em] text-primary-700;
+  }
+  html.dark .eyebrow {
+    @apply border-primary-500/25 bg-primary-500/10 text-primary-300;
+  }
+
+  .eyebrow-light {
+    @apply inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.14em] text-white backdrop-blur;
+  }
+
+  .section-title {
+    @apply font-display text-3xl font-bold tracking-tight text-ink-900 md:text-4xl;
+  }
+  html.dark .section-title {
+    @apply text-white;
+  }
+
+  .section-kicker {
+    @apply mt-4 text-base leading-relaxed text-ink-500;
+  }
+  html.dark .section-kicker {
+    @apply text-ink-400;
+  }
+
+  /* Decorative section divider (used to separate alternating sections) */
+  .section-divider {
+    background-image: linear-gradient(to right, transparent, rgb(15 23 42 / 0.08), transparent);
+  }
+  html.dark .section-divider {
+    background-image: linear-gradient(to right, transparent, rgb(255 255 255 / 0.08), transparent);
+  }
+
+  /* The hero background — gradient mesh on top of deep navy */
+  .gradient-mesh {
+    background-color: #1e3a8a;
+    background-image:
+      radial-gradient(at 12% 18%, rgb(59 130 246 / 0.95) 0px, transparent 55%),
+      radial-gradient(at 88% 8%, rgb(96 165 250 / 0.85) 0px, transparent 50%),
+      radial-gradient(at 78% 92%, rgb(29 78 216 / 0.95) 0px, transparent 55%),
+      radial-gradient(at 18% 88%, rgb(147 197 253 / 0.7) 0px, transparent 50%);
+  }
+
+  /* Hero dot grid (faint, behind content) */
+  .grid-pattern {
+    background-image:
+      linear-gradient(to right, rgb(255 255 255 / 0.07) 1px, transparent 1px),
+      linear-gradient(to bottom, rgb(255 255 255 / 0.07) 1px, transparent 1px);
+    background-size: 48px 48px;
+  }
+
+  /* Aurora-style blob background used on selected sections */
+  .aurora {
+    background:
+      radial-gradient(at 20% 20%, rgb(59 130 246 / 0.20) 0px, transparent 45%),
+      radial-gradient(at 80% 0%, rgb(245 158 11 / 0.16) 0px, transparent 40%),
+      radial-gradient(at 80% 100%, rgb(99 102 241 / 0.18) 0px, transparent 45%);
+  }
+
+  /* Skeleton shimmer */
+  .skeleton {
+    @apply relative overflow-hidden rounded-lg bg-ink-200;
+  }
+  html.dark .skeleton {
+    @apply bg-ink-800;
+  }
+  .skeleton::after {
+    content: '';
+    @apply absolute inset-0 -translate-x-full;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgb(255 255 255 / 0.50),
+      transparent
+    );
+    animation: shimmer 1.6s infinite;
+  }
+  html.dark .skeleton::after {
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgb(255 255 255 / 0.06),
+      transparent
+    );
+  }
+
+  /* Primary CTA button — used by public site */
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl bg-primary-600 px-5 py-2.5 text-sm font-semibold text-white shadow-soft transition hover:bg-primary-700 hover:shadow-glow active:translate-y-px;
+  }
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl border border-ink-200 bg-white px-5 py-2.5 text-sm font-semibold text-ink-700 transition hover:border-primary-300 hover:text-primary-700 hover:shadow-soft;
+  }
+  html.dark .btn-secondary {
+    @apply border-ink-700 bg-ink-900 text-ink-200 hover:border-primary-500/50 hover:text-primary-300;
+  }
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl px-4 py-2 text-sm font-medium text-ink-600 transition hover:bg-ink-100 hover:text-ink-900;
+  }
+  html.dark .btn-ghost {
+    @apply text-ink-300 hover:bg-ink-800 hover:text-white;
+  }
+
+  /* Subtle dotted underline for "link with arrow" pattern */
+  .link-underline {
+    background-image: linear-gradient(to right, currentColor 50%, transparent 50%);
+    background-size: 200% 1px;
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    transition: background-position 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .link-underline:hover {
+    background-position: 0% 100%;
+  }
+
+  /* Card lift on hover — used for grid items */
+  .lift-on-hover {
+    @apply transition-all duration-300 hover:-translate-y-1.5 hover:shadow-elevated;
+  }
+}
+
+@layer utilities {
+  .reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Text gradient (for hero h1) */
+  .text-gradient-primary {
+    @apply bg-gradient-to-r from-white via-blue-100 to-blue-300 bg-clip-text text-transparent;
+  }
+
+  /* Soft divider used inside cards */
+  .divider-soft {
+    @apply h-px w-full bg-ink-200/70;
+  }
+  html.dark .divider-soft {
+    @apply bg-ink-800;
+  }
+
+  /* Container helpers */
+  .container-page {
+    @apply mx-auto max-w-7xl px-4 lg:px-6;
+  }
+
+  /* Hide scrollbar but keep scroll */
+  .no-scrollbar::-webkit-scrollbar { display: none; }
+  .no-scrollbar { scrollbar-width: none; }
+}
+
+/* Route/element transitions */
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.2s ease;
+}
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.page-enter-active {
+  transition: opacity 0.35s ease, transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.page-leave-active {
+  transition: opacity 0.2s ease;
+}
+.page-enter-from {
+  opacity: 0;
+  transform: translateY(12px);
+}
+.page-leave-to {
+  opacity: 0;
+}
+
+.modal-enter-active,
+.modal-leave-active {
+  transition: opacity 0.25s ease;
+}
+.modal-enter-active .modal-panel {
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease;
+}
+.modal-enter-from,
+.modal-leave-to {
+  opacity: 0;
+}
+.modal-enter-from .modal-panel {
+  transform: scale(0.95) translateY(8px);
+  opacity: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "schoolProfile": {
+    "name": "SMA Negeri 1 Pelita Bangsa",
+    "npsn": "20123456",
+    "accreditation": "A",
+    "address": "Jl. Pendidikan No. 123, Kecamatan Maju Jaya, Kota Pelita, 40123",
+    "phone": "(022) 1234567",
+    "email": "info@sman1pelitabangsa.sch.id",
+    "website": "www.sman1pelitabangsa.sch.id",
+    "principal": "Drs. Budi Santoso, M.Pd.",
+    "principalMessage": "Selamat datang di website SMA Negeri 1 Pelita Bangsa. Kami berkomitmen untuk mencetak generasi muda yang berprestasi, berakhlak mulia, dan siap menghadapi tantungan global.",
+    "vision": "Menjadi sekolah unggul yang menghasilkan lulusan berprestasi, berkarakter, dan berdaya saing global.",
+    "mission": [
+      "Menyelenggarakan pembelajaran yang berkualitas dan berbasis teknologi.",
+      "Mengembangkan potensi siswa di bidang akademik dan non-akademik.",
+      "Membentuk karakter siswa yang religius, disiplin, dan mandiri.",
+      "Meningkatkan kualitas tenaga pendidik dan kependidikan.",
+      "Membangun kerja sama yang kuat antara sekolah, orang tua, dan masyarakat."
+    ],
+    "history": "SMA Negeri 1 Pelita Bangsa didirikan pada tahun 1985 dengan visi untuk menyediakan pendidikan menengah atas yang berkualitas di wilayah Kota Pelita. Seiring berjalannya waktu, sekolah ini telah meluluskan ribuan alumni yang sukses di berbagai bidang.",
+    "socialMedia": {
+      "facebook": "https://facebook.com/sman1pelitabangsa",
+      "instagram": "https://instagram.com/sman1pelitabangsa",
+      "twitter": "https://twitter.com/sman1pelita",
+      "youtube": "https://youtube.com/sman1pelitabangsa"
+    },
+    "mapUrl": "https://maps.google.com/?q=SMA+Negeri+1+Pelita+Bangsa"
+  },
+  "majors": [
+    {
+      "id": 1,
+      "name": "Ilmu Pengetahuan Alam (IPA)",
+      "description": "Program peminatan untuk siswa yang ingin mendalami bidang sains, teknologi, dan kesehatan."
+    },
+    {
+      "id": 2,
+      "name": "Ilmu Pengetahuan Sosial (IPS)",
+      "description": "Program peminatan untuk siswa yang tertarik pada ekonomi, sosial, hukum, dan humaniora."
+    },
+    {
+      "id": 3,
+      "name": "Bahasa dan Budaya",
+      "description": "Program peminatan yang mengasah kemampuan berbahasa asing dan apresiasi budaya."
+    }
+  ],
+  "extracurriculars": [
+    { "id": 1, "name": "Pramuka", "description": "Kegiatan kepanduan yang membentuk karakter kepemimpinan dan kemandirian." },
+    { "id": 2, "name": "OSIS", "description": "Organisasi siswa intra sekolah untuk pengembangan kepemimpinan." },
+    { "id": 3, "name": "Paskibra", "description": "Pasukan pengibar bendera yang melatih disiplin dan nasionalisme." },
+    { "id": 4, "name": "Futsal", "description": "Tim futsal sekolah untuk mengembangkan bakat olahraga." },
+    { "id": 5, "name": "Basket", "description": "Tim basket sekolah yang aktif berkompetisi di berbagai event." },
+    { "id": 6, "name": "Musik", "description": "Klub musik untuk siswa yang menyukai seni musik dan pertunjukan." },
+    { "id": 7, "name": "Teater", "description": "Klub teater untuk mengembangkan keterampilan seni peran dan public speaking." },
+    { "id": 8, "name": "Robotik", "description": "Klub robotik yang mempelajari teknologi dan pemrograman." }
+  ],
+  "news": [
+    {
+      "id": 1,
+      "title": "Penerimaan Peserta Didik Baru Tahun Ajaran 2026/2027",
+      "content": "SMA Negeri 1 Pelita Bangsa membuka pendaftaran peserta didik baru untuk tahun ajaran 2026/2027. Pendaftaran dapat dilakukan secara online melalui website resmi sekolah. Informasi lebih lanjut hubungi panitia PPDB.",
+      "category": "Pengumuman",
+      "image": "",
+      "createdAt": "2026-08-01T00:00:00.000Z"
+    },
+    {
+      "id": 2,
+      "title": "Juara Umum Olimpiade Sains Nasional",
+      "content": "Siswa-siswi SMA Negeri 1 Pelita Bangsa berhasil meraih juara umum pada Olimpiade Sains Nasional tingkat provinsi. Prestasi ini merupakan hasil kerja keras siswa dan bimbingan para guru pembimbing.",
+      "category": "Prestasi",
+      "image": "",
+      "createdAt": "2026-07-15T00:00:00.000Z"
+    },
+    {
+      "id": 3,
+      "title": "Kegiatan Bakti Sosial di Panti Asuhan",
+      "content": "Siswa kelas XI melaksanakan kegiatan bakti sosial di panti asuhan sekitar sekolah. Kegiatan ini bertujuan untuk menumbuhkan empati dan kepedulian sosial siswa terhadap masyarakat.",
+      "category": "Kegiatan",
+      "image": "",
+      "createdAt": "2026-06-20T00:00:00.000Z"
+    }
+  ],
+  "students": [
+    { "id": 1, "nisn": "0012345678", "name": "Ahmad Fauzi", "class": "X IPA 1", "status": "Aktif", "gender": "Laki-laki" },
+    { "id": 2, "nisn": "0012345679", "name": "Siti Aminah", "class": "X IPA 1", "status": "Aktif", "gender": "Perempuan" },
+    { "id": 3, "nisn": "0012345680", "name": "Rizky Pratama", "class": "X IPS 1", "status": "Aktif", "gender": "Laki-laki" },
+    { "id": 4, "nisn": "0012345681", "name": "Dewi Lestari", "class": "X IPS 1", "status": "Aktif", "gender": "Perempuan" },
+    { "id": 5, "nisn": "0012345682", "name": "Budi Hartono", "class": "XI IPA 2", "status": "Aktif", "gender": "Laki-laki" },
+    { "id": 6, "nisn": "0012345683", "name": "Maya Sari", "class": "XI IPA 2", "status": "Aktif", "gender": "Perempuan" },
+    { "id": 7, "nisn": "0012345684", "name": "Andi Wijaya", "class": "XI IPS 2", "status": "Aktif", "gender": "Laki-laki" },
+    { "id": 8, "nisn": "0012345685", "name": "Nina Marlina", "class": "XI IPS 2", "status": "Aktif", "gender": "Perempuan" },
+    { "id": 9, "nisn": "0012345686", "name": "Doni Saputra", "class": "XII IPA 1", "status": "Aktif", "gender": "Laki-laki" },
+    { "id": 10, "nisn": "0012345687", "name": "Rina Anggraini", "class": "XII IPS 1", "status": "Aktif", "gender": "Perempuan" }
+  ],
+  "teachers": [
+    { "id": 1, "nip": "196501011990011001", "name": "Drs. Budi Santoso, M.Pd.", "subject": "Matematika", "position": "Kepala Sekolah", "status": "Aktif", "gender": "Laki-laki" },
+    { "id": 2, "nip": "196702121992012002", "name": "Dra. Siti Rahayu", "subject": "Bahasa Indonesia", "position": "Guru Senior", "status": "Aktif", "gender": "Perempuan" },
+    { "id": 3, "nip": "197003031995031003", "name": "Ahmad Yani, S.Pd.", "subject": "Fisika", "position": "Guru", "status": "Aktif", "gender": "Laki-laki" },
+    { "id": 4, "nip": "197504041998042004", "name": "Nurul Hidayah, S.Pd.", "subject": "Biologi", "position": "Guru", "status": "Aktif", "gender": "Perempuan" },
+    { "id": 5, "nip": "198005052000051005", "name": "Eko Prasetyo, M.Pd.", "subject": "Sejarah", "position": "Wakasek Kurikulum", "status": "Aktif", "gender": "Laki-laki" },
+    { "id": 6, "nip": "198206062002062006", "name": "Rina Dewi, S.Pd.", "subject": "Bahasa Inggris", "position": "Guru", "status": "Aktif", "gender": "Perempuan" },
+    { "id": 7, "nip": "198507072005071007", "name": "Agus Salim, S.Pd.", "subject": "Olahraga", "position": "Pembina OSIS", "status": "Aktif", "gender": "Laki-laki" },
+    { "id": 8, "nip": "199008082008082008", "name": "Lestari Putri, S.Pd.", "subject": "Seni Budaya", "position": "Guru", "status": "Aktif", "gender": "Perempuan" }
+  ],
+  "gallery": [
+    {
+      "id": 1,
+      "title": "Upacara Hari Senin",
+      "description": "Kegiatan upacara bendera rutin setiap hari Senin.",
+      "image": "",
+      "createdAt": "2026-08-02T00:00:00.000Z"
+    },
+    {
+      "id": 2,
+      "title": "Perpustakaan Sekolah",
+      "description": "Fasilitas perpustakaan yang nyaman untuk belajar.",
+      "image": "",
+      "createdAt": "2026-07-10T00:00:00.000Z"
+    },
+    {
+      "id": 3,
+      "title": "Laboratorium Komputer",
+      "description": "Lab komputer dengan perangkat yang memadai.",
+      "image": "",
+      "createdAt": "2026-06-15T00:00:00.000Z"
+    }
+  ],
+  "messages": []
+}
